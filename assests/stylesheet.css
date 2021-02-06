@@ -2,9 +2,10 @@ h1,h2,h3,h4,.title,nav,.About,.Work,.Contact
 {
 font-family:'Raleway', sans-serif;}
 
-.image{
+.face{
     width: 270px;
-    height: 350px
+    height: 350px;
+    padding-left: 15px;
     }
 
 .title{
@@ -24,9 +25,67 @@ nav li{
 }
 nav a{
     display:inline-block;
-    padding:10px 
+    padding:25px 
 }
 
 body{
     background-color: pink
 }
+
+* {box-sizing: border-box}
+
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  
+  
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: pink;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family:'Raleway', sans-serif;
+  padding-left: ;
+}
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+
+.img-hover-zoom {
+    height: 300px; 
+    overflow: hidden; 
+  }
+  
+ 
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  
+  
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }
