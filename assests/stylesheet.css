@@ -36,3 +36,8 @@ body {
   font-size: 50pt;
   color: #f8d7d7;
 }
+
+.contactimg {
+  max-width: 25px;
+  max-height: 25px;
+}
